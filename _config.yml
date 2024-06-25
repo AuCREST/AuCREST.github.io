@@ -1,43 +1,51 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
-#
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
-
 # Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
-title: Collaborative Research for Election Security and Trustworthiness
+title: Collaborative Research for Election Security and Trustworthiness 
 email: michelle.blom@unimelb.edu.au
-description: >- # this means to ignore newlines until "baseurl:"
-  The website of the Collaborative Research for Election Security and Trustworthiness (CREST) Group.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "httos://AuCREST.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-repository: "AuCREST/AuCREST.github.io"
-logo: "/images/cockatoo.jpeg"
+description: Website for the  Collaborative Research for Election Security and Trustworthiness group
+baseurl: ""
+url: ""
+
+# Footer info
+contact: >
+    <a href="mailto:michelle.blom@unimelb.edu.au" target="_blank"><i class="fa fa-envelope fa-1x"></i> Contact CREST via email</a> <br/>
+    <a href="https://github.com/sbryngelson/academic-website-template"><i class="fa fa-github fa-1x"></i> Use this site as a template!</a>
+
+# Pages shown in navbar
+nav_pages:
+  - name: people
+  - name: news
+  - name: research
+  - name: publications
 
 include:
+  - .htaccess
   - _pages
 
-# Build settings
+# Conversion
 markdown: kramdown
-theme: jekyll-theme-minimal
-# minimal_mistakes_skin: "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+highlighter: rouge
+lsi: false
+excerpt_separator: "\n\n"
+incremental: false
 
-# Exclude from processing.
-# The following items will not be processed, by default. Create a custom list
-# to override the default setting.
-# exclude:
-#  - Gemfile
-#  - Gemfile.lock
-#   - node_modules
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+# Markdown Processing
+kramdown:
+  input: GFM
+  hard_wrap: false
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  smart_quotes: lsquo,rsquo,ldquo,rdquo
+  enable_coderay: false
+  parse_block_html: true # default for kramdown is false. This will enable using Markdown links
+
+
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - update_boostrap.sh
+  - switch_theme.sh
+  - tags
+  - Rakefile

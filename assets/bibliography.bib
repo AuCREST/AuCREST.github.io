@@ -1,0 +1,267 @@
+
+@INPROCEEDINGS{Blom2022-jf,
+  title         = "A First Approach to {Risk-Limiting} Audits for Single
+                   Transferable Vote Elections",
+  author        = "Blom, Michelle and Stuckey, Peter J and Teague, Vanessa and
+                   Vukcevic, Damjan",
+  abstract      = "Risk-limiting audits (RLAs) are an increasingly important
+                   method for checking that the reported outcome of an election
+                   is, in fact, correct. Indeed, their use is increasingly
+                   being legislated. While effective methods for RLAs have been
+                   developed for many forms of election -- for example:
+                   first-past-the-post, instant-runoff voting, and D'Hondt
+                   elections -- auditing methods for single transferable vote
+                   (STV) elections have yet to be developed. STV elections are
+                   notoriously hard to reason about since there is a complex
+                   interaction of votes that change their value throughout the
+                   process. In this paper we present the first approach to
+                   risk-limiting audits for STV elections, restricted to the
+                   case of 2-seat STV elections.",
+  booktitle       = "Proceedings of the 7th Workshop on Advances in Secure
+                   Electronic Voting (VOTING)",
+  year          =  2022,
+}
+
+@INPROCEEDINGS{Everest2022-gu,
+  title         = "{Ballot-Polling} Audits of {Instant-Runoff} Voting Elections
+                   with a {Dirichlet-Tree} Model",
+  author        = "Everest, Floyd and Blom, Michelle and Stark, Philip B and
+                   Stuckey, Peter J and Teague, Vanessa and Vukcevic, Damjan",
+  abstract      = "Instant-runoff voting (IRV) is used in several countries
+                   around the world. It requires voters to rank candidates in
+                   order of preference, and uses a counting algorithm that is
+                   more complex than systems such as first-past-the-post or
+                   scoring rules. An even more complex system, the single
+                   transferable vote (STV), is used when multiple candidates
+                   need to be elected. The complexity of these systems has made
+                   it difficult to audit the election outcomes. There is
+                   currently no known risk-limiting audit (RLA) method for STV,
+                   other than a full manual count of the ballots. A new
+                   approach to auditing these systems was recently proposed,
+                   based on a Dirichlet-tree model. We present a detailed
+                   analysis of this approach for ballot-polling Bayesian audits
+                   of IRV elections. We compared several choices for the prior
+                   distribution, including some approaches using a Bayesian
+                   bootstrap (equivalent to an improper prior). Our findings
+                   include that the bootstrap-based approaches can be adapted
+                   to perform similarly to a full Bayesian model in practice,
+                   and that an overly informative prior can give
+                   counter-intuitive results. Via carefully chosen examples, we
+                   show why creating an RLA with this model is challenging, but
+                   we also suggest ways to overcome this. As well as providing
+                   a practical and computationally feasible implementation of a
+                   Bayesian IRV audit, our work is important in laying the
+                   foundation for an RLA for STV elections.",
+  booktitle       = "1st International Workshop on Election Infrastructure
+                   Security (EIS 2022)",
+  year          =  2022,
+}
+
+@INPROCEEDINGS{Everest2022-uo,
+  title         = "Auditing Ranked Voting Elections with {Dirichlet-Tree}
+                   Models: First Steps",
+  author        = "Everest, Floyd and Blom, Michelle and Stark, Philip B and
+                   Stuckey, Peter J and Teague, Vanessa and Vukcevic, Damjan",
+  abstract      = "Ranked voting systems, such as instant-runoff voting (IRV)
+                   and single transferable vote (STV), are used in many places
+                   around the world. They are more complex than plurality and
+                   scoring rules, presenting a challenge for auditing their
+                   outcomes: there is no known risk-limiting audit (RLA) method
+                   for STV other than a full hand count. We present a new
+                   approach to auditing ranked systems that uses a statistical
+                   model, a Dirichlet-tree, that can cope with high-dimensional
+                   parameters in a computationally efficient manner. We
+                   demonstrate this approach with a ballot-polling Bayesian
+                   audit for IRV elections. Although the technique is not known
+                   to be risk-limiting, we suggest some strategies that might
+                   allow it to be calibrated to limit risk.",
+  booktitle       = "Proceedings of the 7th International Joint Conference on Electronic Voting ({EVOTE-ID})",
+  year          =  2022,
+}
+
+@ARTICLE{Blom2019-tg,
+  title     = "Toward computing the margin of victory in single transferable
+               vote elections",
+  author    = "Blom, Michelle L and Stuckey, Peter J and Teague, Vanessa J",
+  journal   = "INFORMS J. Comput.",
+  publisher = "INFORMS",
+  volume    =  31,
+  number    =  4,
+  pages     = "636--653",
+  year      =  2019,
+  keywords  = "Authored;VOTING",
+  abstract = "The single transferable vote (STV) is a system of preferential voting for multiseat elections. Each ballot cast by a voter is a (potentially partial) ranking over a set of candidates. No techniques currently exist for computing the margin of victory (MOV) in STV elections. The MOV is the smallest number of ballot manipulations (changes, additions, and deletions) required to bring about a change in the set of elected candidates. Knowing the MOV gives insight into how much time and money should be spent on auditing the election, and whether uncovered mistakes (such as ballot box losses) throw the election result into doubt—requiring a costly repeat election—or can be safely ignored. We present algorithms for computing lower and upper bounds on the MOV in STV elections. In small instances, these algorithms are able to compute exact margins."
+}
+
+@INPROCEEDINGS{Blom2016-we,
+  title     = "Efficient Computation of Exact {IRV} Margins",
+  booktitle = "{ECAI} 2016",
+  author    = "Blom, Michelle L and Teague, Vanessa J and Stuckey, Peter J and
+               Tidhar, Ron",
+  publisher = "IOS Press",
+  pages     = "480--488",
+  year      =  2016,
+  keywords  = "Authored;VOTING",
+  abstract = "The margin of victory is easy to compute for many election schemes but difficult for Instant Runoff Voting (IRV). This is important because arguments about the correctness of an election outcome usually rely on the size of the electoral margin. For example, risk-limiting audits require a knowledge of the margin of victory in order to determine how much auditing is necessary. This paper presents a practical branch-and-bound algorithm for exact IRV margin computation that substantially improves on the current best-known approach. Although exponential in the worst case, our algorithm runs efficiently in practice on all the real examples we could find. We can efficiently discover exact margins on election instances that cannot be solved by the current state-of-the-art."
+}
+
+@INPROCEEDINGS{Conway2017-hw,
+  title     = "An analysis of New South Wales electronic vote counting",
+  booktitle = "Proceedings of the Australasian Computer Science Week
+               Multiconference ({ACSW})",
+  author    = "Conway, Andrew and Blom, Michelle L and Naish, Lee and Teague,
+               Vanessa J",
+  pages     = "1--5",
+  year      =  2017,
+  keywords  = "Authored;VOTING",
+  abstract = "We re-examine the 2012 local government elections in New South Wales, Australia. The count was conducted electronically using a randomised form of the Single Transferable Vote (STV). It was already well known that randomness does make a difference to outcomes in some seats. We describe how the process could be amended to include a demonstration that the randomness was chosen fairly. 
+Second, and more significantly, we found an error in the official counting
+software, which caused a mistake in the count in the council of Griffith, where
+candidate Rina Mercuri narrowly missed out on a seat. We believe the software
+error incorrectly decreased Mercuri's winning probability to about
+10\%---according to our count she should have won with 91\% probability. 
+The NSW Electoral Commission (NSWEC) corrected their code when we pointed out the error, and made their own announcement. 
+We have since investigated the 2016 local government election (held after correcting the error above) and found two new errors. We notified the NSWEC about these errors a few days after they posted the results."
+}
+
+
+@INPROCEEDINGS{Blom2018-mk,
+  title       = "Computing the margin of victory in preferential parliamentary
+                 elections",
+  booktitle   = "Proceedings of the 3rd International Joint Conference on
+                 Electronic Voting ({EVOTE-ID}) [Best Paper Award]",
+  author      = "Blom, Michelle L and Stuckey, Peter J and Teague, Vanessa J",
+  pages       = "1--16",
+  institution = "Springer",
+  year        =  2018,
+  keywords    = "Authored;VOTING",
+  abstract = "We show how to use automated computation of election margins to assess the number of votes that would need to change in order to alter a parliamentary outcome for single-member preferential electorates. In the context of increasing automation of Australian electoral processes, and accusations of deliberate interference in elections in Europe and the USA, this work forms the basis of a rigorous statistical audit of the parliamentary election outcome. Our example is the New South Wales Legislative Council election of 2015, but the same process could be used for any similar parliament for which data was available, such as the Australian House of Representatives given the proposed automatic scanning of ballots."
+}
+
+@INPROCEEDINGS{Blom2018-yb,
+  title       = "Ballot-polling risk limiting audits for {IRV} elections",
+  booktitle   = "Proceedings of the 3rd International Joint Conference on
+                 Electronic Voting ({EVOTE-ID})",
+  author      = "Blom, Michelle L and Stuckey, Peter J and Teague, Vanessa J",
+  pages       = "17--34",
+  institution = "Springer",
+  year        =  2018,
+  keywords    = "Authored;VOTING",
+  abstract = "Risk-limiting post election audits guarantee a high probability of correcting incorrect election results, independent of why the result was incorrect. Ballot-polling audits select ballots at random and interpret those ballots as evidence for and against the actual recorded result, continuing this process until either they support the recorded result, or they fall back to a full manual recount. Ballot-polling for first-past-the-post elections is well understood, and used in some US elections. We define a number of approaches to ballot-polling risk-limiting audits for Instant Runoff Voting (IRV) elections. We show that for almost all real elections we found, we can perform a risk-limiting audit by looking at only a small fraction of the total ballots (assuming no errors)."
+}
+
+
+@INPROCEEDINGS{Blom2019-co,
+  title     = "Election Manipulation 100",
+  booktitle = "Proceedings of the 4th Workshop on Advances in Secure Electronic
+               Voting ({VOTING})",
+  author    = "Blom, Michelle L and Stuckey, Peter J and Teague, Vanessa J",
+  pages     = "211--225",
+  year      =  2019,
+  keywords  = "Authored;VOTING",
+  abstract = "The true election margin for an Instant Runoff Voting (IRV) election can be hard to compute, because a small modification early in the elimination sequence can alter the outcome and result in a candidate winning the last round by a large margin. It is often assumed that the true margin is the last-round margin, that is half the difference between the two candidates who remain when everyone else is eliminated, though it is well known that this need not be the case. Perceptions of confidence in the outcome, and even formal policies about recounts, often depend on the last-round margin. There is already some prior work on how to compute the true election margin efficiently for IRV, and hence how to find the minimal manipulation. In this work we show how to manipulate an election efficiently while also producing a large last-round margin. This would allow a succesful manipulation to evade detection against naive methods of assessing the confidence of the election result. This serves as further evidence for accurate computations of the exact margin, or for rigorous Risk Limiting Audits which would detect a close or wrong election result (respectively) regardless of the last-round margin."
+}
+
+@INPROCEEDINGS{Blom2019-bi,
+  title       = "Election Manipulation with Partial Information",
+  booktitle   = "Proceedings of the 4th International Joint Conference on
+                 Electronic Voting ({EVOTE-ID})",
+  author      = "Blom, Michelle L and Stuckey, Peter J and Teague, Vanessa J",
+  pages       = "32--49",
+  institution = "Springer",
+  year        =  2019,
+  keywords    = "Authored;VOTING",
+  abstract = "We consider the case of manipulating the results of Instant Runoff Voting (IRV) elections. Previous work in this area looked at posthoc manipulation with complete information, where the manipulator may alter ballots after reading the whole election profile. In this paper we examine the much more realistic, but challenging, problem of manipulating ballots during the election process, having observed only some ballots. The aim of the manipulator is to modify as few ballots as possible to ensure their candidate’s victory with high probability. We show that this it quite feasible in practice to generate efficient manipulations with a high probability of success. We also add some extra conditions on the manipulations so it is less likely they will be detected by naive methods."
+}
+
+@INPROCEEDINGS{Blom2020-nv,
+  title     = "Did that lost ballot box cost me a seat? Computing manipulations
+               of {STV} elections",
+  booktitle = "Proceedings of the {Thirty-Second} Annual Conference on
+               Innovative Applications of Artificial Intelligence ({IAAI})",
+  author    = "Blom, Michelle L and Conway, Andrew and Stuckey, Peter J and
+               Teague, Vanessa J",
+  volume    =  34,
+  pages     = "13235--13240",
+  year      =  2020,
+  keywords  = "Authored;VOTING",
+  abstract = "Mistakes made by humans, or machines, commonly arise when managing ballots cast in an election. In the 2013 Australian Federal Election, for example, 1,370 West Australian Senate ballots were lost, eventually leading to a costly re-run of the election. Other mistakes include ballots that are misrecorded by electronic voting systems, voters that cast invalid ballots, or vote multiple times at different polling locations. We present a method for assessing whether such problems could have made a difference to the outcome of a Single Transferable Vote (STV) election – a complex system of preferential voting for multi-seat elections. It is used widely in Australia, in Ireland, and in a range of local government elections in the United Kingdom and United States."
+}
+
+@INPROCEEDINGS{Blom2020-iv,
+  title       = "Shifting the {Balance-of-Power} in {STV} Elections",
+  booktitle   = "Proceedings of the 5th International Joint Conference on
+                 Electronic Voting ({EVOTE-ID})",
+  author      = "Blom, Michelle L and Conway, Andrew and Stuckey, Peter J and
+                 Teague, Vanessa J",
+  pages       = "1--18",
+  institution = "Springer",
+  year        =  2020,
+  keywords    = "Authored;VOTING",
+  abstract = "In the context of increasing automation of Australian electoral processes, and accusations of deliberate interference in elections in Europe and the USA, it is worthwhile understanding how little a change in the recorded ballots could change an election result. In this paper we construct manipulations of the ballots in order to change the overall balance of power in an Australian Federal Senate election – the upper house of Parliament. This gives, hopefully tight, over-estimations of the Margin of Victory (MOV) for the party or coalition winning the Senate. This is critical information for determining how well we can trust the reported results, and how much auditing should be applied to the election process to be certain that it reports the true result. The challenge arising in Australian Federal Senate elections is that they use a complicated Single Transferable Vote (STV) method for which it is intractable to compute the true MOV, hence we must rely on greedy methods to find small manipulations."
+}
+
+@INPROCEEDINGS{Blom2020-ny,
+  title       = "Random errors are not necessarily politically neutral",
+  booktitle   = "Proceedings of the 5th International Joint Conference on
+                 Electronic Voting ({EVOTE-ID})",
+  author      = "Blom, Michelle L and Conway, Andrew and Stuckey, Peter J and
+                 Teague, Vanessa J and Vukcevic, Damjan",
+  pages       = "19--35",
+  institution = "Springer",
+  year        =  2020,
+  keywords    = "Authored;VOTING",
+  abstract = "Errors are inevitable in the implementation of any complex process. Here we examine the effect of random errors on Single Transferable Vote (STV) elections, a common approach to deciding multi-seat elections. It is usually expected that random errors should have nearly equal effects on all candidates, and thus be fair. We find to the contrary that random errors can introduce systematic bias into election results. This is because, even if the errors are random, votes for different candidates occur in different patterns that are affected differently by random errors. In the STV context, the most important effect of random errors is to invalidate the ballot. This removes far more votes for those candidates whose supporters tend to list a lot of preferences, because their ballots are much more likely to be invalidated by random error. Different validity rules for different voting styles mean that errors are much more likely to penalise some types of votes than others. For close elections this systematic bias can change the result of the election."
+}
+
+@INPROCEEDINGS{Blom2020-ig,
+  title    = "You can do {RLAs} for {IRV}",
+  booktitle   = "Proceedings of the 5th International Joint Conference on
+                 Electronic Voting ({EVOTE-ID}) [Best Paper Award]",
+  author   = "Blom, Michelle L and Conway, Andrew and King, Dan and Sandrolini,
+              Laurent and Stark, Philip B and Stuckey, Peter J and Teague,
+              Vanessa J",
+  year     =  2020,
+  keywords = "Authored;VOTING",
+  abstract = "The City and County of San Francisco, CA, has used Instant Runoff Voting (IRV) for some elections since 2004. This report describes the first ever process pilot of Risk Limiting Audits for IRV, for the San Francisco District Attorney's race in November, 2019. We found that the vote-by-mail outcome could be efficiently audited to well under the 0.05 risk limit given a sample of only 200 ballots. All the software we developed for the pilot is open source."
+}
+
+@INPROCEEDINGS{Blom2021-jf,
+  title     = "Auditing Hamiltonian Elections",
+  booktitle = "Proceedings of the 6th Workshop on Advances in Secure Electronic
+               Voting ({VOTING})",
+  author    = "Blom, Michelle L and Stark, Philip B and Stuckey, Peter J and
+               Teague, Vanessa J and Vukcevic, Damjan",
+  pages     = "235--250",
+  year      =  2021,
+  keywords  = "Authored;VOTING",
+  abstract = "Presidential primaries are a critical part of the United States Presidential electoral process, since they are used to select the candidates in the Presidential election. While methods differ by state and party, many primaries involve proportional delegate allocation using the so-called Hamilton method. In this paper we show how to conduct risk-limiting audits for delegate allocation elections using variants of the Hamilton method where the viability of candidates is determined either by a plurality vote or using instant runoff voting. Experiments on real-world elections show that we can audit primary elections to high confidence (small risk limits) usually at low cost."
+}
+
+@unpublished{Blom2019-dq,
+  title    = "{{RAIRE}}: Risk-limiting audits for {IRV} elections",
+  author   = "Blom, Michelle and Stuckey, Peter J and Teague, Vanessa",
+  url  = "https://arxiv.org/abs/1903.08804arXiv:1903.08804",
+  year     =  2019,
+  keywords = "Authored;VOTING",
+  abstract = "Risk-limiting post election audits guarantee a high probability of correcting incorrect election results, independent of why the result was incorrect. Ballot-polling audits select ballots at random and interpret those ballots as evidence for and against the reported result, continuing this process until either they support the recorded result, or they fall back to a full manual recount. For elections with digitised scanning and counting of ballots, a comparison audit compares randomly selected digital ballots with their paper versions. Discrepancies are referred to as errors, and are used to build evidence against or in support of the recorded result. Risk-limiting audits for first-past-the-post elections are well understood, and used in some US elections. We define a number of approaches to ballot-polling and comparison risk-limiting audits for Instant Runoff Voting (IRV) elections. We show that for almost all real elections we found, we can perform a risk-limiting audit by looking at only a small fraction of the total ballots (assuming no errors were made in the tallying and distribution of votes)."
+}
+
+@INPROCEEDINGS{Blom2021-vf,
+  title     = "{Assertion-Based} Approaches to Auditing Complex Elections, with
+               Application to {Party-List} Proportional Elections",
+  booktitle = "Proceedings of the 6th International Joint Conference on Electronic Voting ({EVOTE-ID})",
+  author    = "Blom, Michelle and Budurushi, Jurlind and Rivest, Ronald L and
+               Stark, Philip B and Stuckey, Peter J and Teague, Vanessa and
+               Vukcevic, Damjan",
+  publisher = "Springer",
+  volume    =  12900,
+  pages     = "47--62",
+  series    = "Lecture Notes in Computer Science",
+  month     =  sep,
+  year      =  2021,
+  address   = "Cham",
+  keywords  = "Authored;VOTING",
+  abstract = "Risk-limiting audits (RLAs), an ingredient in evidence-based elections, are increasingly common. They are a rigorous statistical means of ensuring that electoral results are correct, usually without having to perform an expensive full recount -- at the cost of some controlled probability of error. A recently developed approach for conducting RLAs, SHANGRLA, provides a flexible framework that can encompass a wide variety of social choice functions and audit strategies. Its flexibility comes from reducing sufficient conditions for outcomes to be correct to canonical `assertions' that have a simple mathematical form. 
+Assertions have been developed for auditing various social choice functions including plurality, multi-winner plurality, super-majority, Hamiltonian methods, and instant runoff voting. However, there is no systematic approach to building assertions. Here, we show that assertions with linear dependence on transformations of the votes can easily be transformed to canonical form for SHANGRLA. We illustrate the approach by constructing assertions for party-list elections such as Hamiltonian free list elections and elections using the D'Hondt method, expanding the set of social choice functions to which SHANGRLA applies directly."
+}
