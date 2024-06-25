@@ -1,8 +1,8 @@
 ---
-title: "Home"
-layout: homelay
+title: "People"
+layout: piclay
 sitemap: false
-permalink: /
+permalink: /people
 ---
 
   <h3>Welcome</h3>
