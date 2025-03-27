@@ -60,7 +60,7 @@ Audits (RLAs) for Instant Runoff Voting (IRV) elections.
 
 ## RLAs with AWAIRE
 
-## RLAs for Single Transferable Vote (STV) Elections
+## RLAs for STV Elections
 
 ## Mismatch Audits
 
