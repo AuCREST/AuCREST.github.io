@@ -11,6 +11,7 @@ website:
       - news.qmd
       - research.qmd
       - publications.qmd
+      - software.qmd
       - about.qmd
       - contact.qmd
 
