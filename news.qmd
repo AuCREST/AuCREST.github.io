@@ -1,5 +1,9 @@
 ---
-title: "About"
+title: "News"
 ---
 
-About this site
+March 2025
+
+- Papers accepted at Voting'25.
+
+- Preprint of STV margins paper.
