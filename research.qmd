@@ -9,7 +9,7 @@ for various election systems, and algorithms for analysing the properties of
 elections, such as the margin of victory. 
 
 
-# Risk Limiting Audits
+## Risk Limiting Audits
 
 Risk limiting audits (RLAs) are a post-election activity, performed to provide a certain level of confidence
 in the correctness of the reported outcome, or to correct a wrong outcome by manual recount. These
@@ -20,13 +20,13 @@ reported outcome that was in fact wrong. The audit proceeds by sampling ballots 
 below an acceptable level, or election administrators determine that a full manual count is required.
 
 
-# Voting Schemes
+## Voting Schemes
 
 Our research primarily considers election systems in which voters rank
 candidates according to their preferences, commonly referred to as preferential
 or ranked-choice elections. 
 
-## Instant Runoff Voting (IRV)
+### Instant Runoff Voting (IRV)
 
 Instant Runoff Voting (IRV) is a preferential, or ranked-choice, voting scheme. 
 Voters cast a ballot in which they *rank* the
@@ -49,28 +49,28 @@ tally until one candidate remains. This last remaining candidate is declared the
 winner.
  
 
-## Single Transferable Vote (STV)
+### Single Transferable Vote (STV)
 
 
-# RLA Methodologies 
+## RLA Methodologies 
 
-### RAIRE
+#### RAIRE
 
 **R**isk limiting **A**udits for **IR**V **E**lections (RAIRE) allows election administrators to conduct Risk Limiting
 Audits (RLAs) for Instant Runoff Voting (IRV) elections. 
 
 
-### AWAIRE
+#### AWAIRE
 
-### RLAs for Single Transferable Vote (STV) Elections
+#### RLAs for Single Transferable Vote (STV) Elections
 
-### Mismatch Audits
+#### Mismatch Audits
 
-# Margin Computation
+## Margin Computation
 
-## Instant Runoff Voting (IRV)
+### Instant Runoff Voting (IRV)
 
-## Single Transferable Vote (STV)
+### Single Transferable Vote (STV)
 
 
 
