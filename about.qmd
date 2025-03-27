@@ -2,4 +2,4 @@
 title: "About"
 ---
 
-Collaborative Research for Election Security and Trustworthiness Group
+Collaborative Research for Election Security and Trustworthiness Group (CREST)
