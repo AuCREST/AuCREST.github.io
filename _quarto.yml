@@ -10,9 +10,10 @@ website:
       - href: people/index.qmd
         text: People
       - news.qmd
+      - about.qmd
       - research.qmd
       - publications.qmd
-      - about.qmd
+      - software.qmd
       - contact.qmd
 
 format:
@@ -22,6 +23,7 @@ format:
       - brand
     css: styles.css
     toc: true
+    toc-expand: true
 
 
 

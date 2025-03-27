@@ -2,11 +2,75 @@
 title: "Research"
 ---
 
-# Theme 1
+Our research focuses on solving computational and mathematical problems
+associated with improving election security, integrity, and trustworthiness.
+This includes developing methodologies for risk-limiting post-election audits
+for various election systems, and algorithms for analysing the properties of
+elections, such as the margin of victory. 
 
-Info about this research theme.
+
+## Risk Limiting Audits
+
+Risk limiting audits (RLAs) are a post-election activity, performed to provide a certain level of confidence
+in the correctness of the reported outcome, or to correct a wrong outcome by manual recount. These
+audits involve randomly sampling paper ballots that have been cast by voters. After collecting and
+analysing such a sample, statistical computations are performed to ascertain a current level of risk. A
+Risk Limiting Audit guarantees a *risk limit*: the maximum probability that it will mistakenly confirm a
+reported outcome that was in fact wrong. The audit proceeds by sampling ballots until this risk falls
+below an acceptable level, or election administrators determine that a full manual count is required.
 
 
-# Theme 2
+## Voting Schemes
 
-Info about this research theme.
+Our research primarily considers election systems in which voters rank
+candidates according to their preferences, commonly referred to as preferential
+or ranked-choice elections. 
+
+### Instant Runoff Voting (IRV)
+
+Instant Runoff Voting (IRV) is a preferential, or ranked-choice, voting scheme. 
+Voters cast a ballot in which they *rank* the
+set of candidates from most to least preferred. Depending on the jurisdiction,
+each vote may express a total, or partial, order over the set of candidates.
+Each ballot represents a single vote. 
+
+An IRV election is tabulated in rounds. In the first round, each candidate has a
+tally pile consisting of all the ballots on which they have been ranked first
+(highest). The number of ballots in this pile (the number of votes) represents 
+their *first preference tally*. While no candidate
+has the majority of votes, the candidate with the smallest tally is
+*eliminated*. All ballots in their tally pile are then given to the next most
+preferred eligible candidate on the ballot. A candidate is eligible to receive
+new ballots in their pile if they are still standing (not yet eliminated).
+Ballots with no further elibigle candidates in their ranking become *exhausted*.
+When one candidate has the majority of votes, they are declared the winner.
+Alternatively, we can continue to eliminated the candidate with the smallest
+tally until one candidate remains. This last remaining candidate is declared the
+winner.
+ 
+
+### Single Transferable Vote (STV)
+
+
+## RLA Methodologies 
+
+#### RAIRE
+
+**R**isk limiting **A**udits for **IR**V **E**lections (RAIRE) allows election administrators to conduct Risk Limiting
+Audits (RLAs) for Instant Runoff Voting (IRV) elections. 
+
+
+#### AWAIRE
+
+#### RLAs for Single Transferable Vote (STV) Elections
+
+#### Mismatch Audits
+
+## Margin Computation
+
+### Instant Runoff Voting (IRV)
+
+### Single Transferable Vote (STV)
+
+
+
