@@ -7,9 +7,10 @@ website:
     left:
       - href: index.qmd
         text: Home
+      - href: people/index.qmd
+        text: People
       - news.qmd
       - about.qmd
-      - people.qmd
       - research.qmd
       - publications.qmd
       - software.qmd
