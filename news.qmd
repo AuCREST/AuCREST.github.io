@@ -4,6 +4,15 @@ title: "News"
 
 March 2025
 
-- Papers accepted at Voting'25.
+- Two of our papers were accepted at [Voting'25](https://fc25.ifca.ai/voting/):
 
-- Preprint of STV margins paper.
+    - [3+ Seat Risk-Limiting Audits for Single Transferable Vote
+      Elections](https://arxiv.org/abs/2503.14803)
+    - [Doing More With Less: Mismatch-Based Risk-Limiting
+      Audits](https://arxiv.org/abs/2503.16104)
+
+- We have released a preprint of our latest method for calculating margins of
+  victory for STV elections:
+
+    - [Efficient Lower Bounding of Single Transferable Vote Election
+      Margins](https://arxiv.org/abs/2501.14847)
