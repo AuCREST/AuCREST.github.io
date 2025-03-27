@@ -52,19 +52,17 @@ winner.
 ### Single Transferable Vote (STV)
 
 
-## RLA Methodologies 
-
-#### RAIRE
+## RLAs with RAIRE
 
 **R**isk limiting **A**udits for **IR**V **E**lections (RAIRE) allows election administrators to conduct Risk Limiting
 Audits (RLAs) for Instant Runoff Voting (IRV) elections. 
 
 
-#### AWAIRE
+## RLAs with AWAIRE
 
-#### RLAs for Single Transferable Vote (STV) Elections
+## RLAs for Single Transferable Vote (STV) Elections
 
-#### Mismatch Audits
+## Mismatch Audits
 
 ## Margin Computation
 
