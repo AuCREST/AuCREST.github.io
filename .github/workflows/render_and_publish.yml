@@ -1,0 +1,31 @@
+name: Publish website
+
+on:
+  push:
+    branches: main
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: quarto-dev/quarto-actions/setup@v2
+
+      - name: Render
+        uses: quarto-dev/quarto-actions/render@v2
+
+      - name: Make Artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site/
+      
+      - name: Deploy
+        id: deployment
+        uses: actions/deploy-pages@v4
