@@ -1,5 +1,12 @@
 ---
-title: "About"
+title: "Publications"
+bibliography: references.bib
+format:
+  html:
+    code-fold: true
+nocite: "@*"
+csl: publications.csl
 ---
 
-About this site
+::: {#refs}
+:::
