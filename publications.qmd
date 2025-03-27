@@ -1,5 +1,12 @@
 ---
 title: "Publications"
+bibliography: references.bib
+format:
+  html:
+    code-fold: true
+nocite: "@*"
+csl: publications.csl
 ---
 
-List of publications
+::: {#refs}
+:::
