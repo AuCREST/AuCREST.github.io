@@ -7,8 +7,12 @@ website:
     left:
       - href: index.qmd
         text: Home
-      - about.qmd
+      - people.qmd
+      - news.qmd
       - research.qmd
+      - publications.qmd
+      - about.qmd
+      - contact.qmd
 
 format:
   html:
