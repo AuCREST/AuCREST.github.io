@@ -3,3 +3,12 @@ title: "About"
 ---
 
 Collaborative Research for Election Security and Trustworthiness Group (CREST)
+
+We work on a range of topics related to election integrity, including
+developing methods and software to:
+
+- Determine how close an election was.
+- Check the outcome of an election via an election audit.
+
+We are based in Melbourne, Australia, and work with collaborators from many
+other countries.
