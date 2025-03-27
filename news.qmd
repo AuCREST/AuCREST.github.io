@@ -16,3 +16,50 @@ March 2025
 
     - [Efficient Lower Bounding of Single Transferable Vote Election
       Margins](https://arxiv.org/abs/2501.14847)
+
+
+February 2022
+
+- Our work on risk limiting audits for Ranked Pairs elections has been
+accepted to the VOTING'23 workshop.
+
+September 2022
+
+- Our work on using Dirichlet-Tree models for ballot-polling audits
+of IRV elections was presented at the first International Workshop on
+Election Infrastructure Security (EIS'22).
+
+October 2022
+
+- It's time for the 8th International Joint Conference on Electronic
+Voting (EVOTE-ID'22)! Our team is presenting work on initial steps toward
+using Dirichlet-Tree models for IRV post-election audits.
+
+May 2022
+
+- Our work on risk limiting audits for 2-seat STV elections was 
+presented at VOTING'22!
+
+January 2022
+
+- This past year our team has explored risk-limiting audit
+methodologies for both party-list proportional and Hamiltonian elections. We
+have also been successful in our ARC Discovery Project application on post-election
+audits for Single Transferable Vote (STV) elections!
+
+December 2021
+
+- In an early Christmas present, our team has been awarded an ARC
+Discovery Project grant. This project will focus on developing post-election
+audit methodologies for Single Transferable Vote (STV) elections.
+
+January 2021
+
+- Despite the COVID-19 pandemic sending us Melbournians home for the
+majority of the year in 2020, this past year has been a busy one on the election
+auditing and analysis front. We presented three papers at EVOTE-ID'20, winning a
+best paper award for 'You can do RLAs for IRV' summarising the first pilot of
+our methodology for risk-limiting audits of IRV elections. Early in the year, we
+presented work at IAAI on exploring whether certain mistakes, such as lost ballot
+boxes, could have had caused specific candidates to lose a seat in the context
+of STV elections.
