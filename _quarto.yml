@@ -10,7 +10,6 @@ website:
       - href: people/index.qmd
         text: People
       - news.qmd
-      - about.qmd
       - research.qmd
       - publications.qmd
       - software.qmd
