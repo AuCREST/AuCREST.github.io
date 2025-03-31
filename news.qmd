@@ -26,7 +26,7 @@ title: "News"
 - Congratulations to Michelle Blom for winning the 2024 University of Melbourne
   Excellence Award for Interdiscplinary Research for her work on risk-limiting
 audits for preferential elections. 
-    - [IEEE Cybersecurity Award for Practice](https://secdev.ieee.org/2023/awardees/)
+
 
 **October**
 
@@ -62,6 +62,7 @@ Instant-Runoﬀ Voting Elections](https://fc24.ifca.ai/voting/papers/Voting24_Ef
 - Congratulations to Michelle Blom and Vanessa Teague for winning the 2023 IEEE
   Cybersecurity Award for Practice, in conjunction with Philip Stark and Mark
 Lindeman, at Sec Dev'23. 
+    - [IEEE Cybersecurity Award for Practice](https://secdev.ieee.org/2023/awardees/)
 
 - Our team presented work on adaptive audits for IRV elections at EVOTE'23.
     - [Adaptively Weighted Audits of Instant-Runoff Voting Elections: AWAIRE](https://library.oapen.org/bitstream/handle/20.500.12657/76758/978-3-031-43756-4.pdf?sequence=1#page=46)
