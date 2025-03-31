@@ -9,17 +9,6 @@ for various election systems, and algorithms for analysing the properties of
 elections, such as the margin of victory. 
 
 
-## Risk Limiting Audits
-
-Risk limiting audits (RLAs) are a post-election activity, performed to provide a certain level of confidence
-in the correctness of the reported outcome, or to correct a wrong outcome by manual recount. These
-audits involve randomly sampling paper ballots that have been cast by voters. After collecting and
-analysing such a sample, statistical computations are performed to ascertain a current level of risk. A
-Risk Limiting Audit guarantees a *risk limit*: the maximum probability that it will mistakenly confirm a
-reported outcome that was in fact wrong. The audit proceeds by sampling ballots until this risk falls
-below an acceptable level, or election administrators determine that a full manual count is required.
-
-
 ## Voting Schemes
 
 Our research primarily considers election systems in which voters rank
@@ -51,24 +40,42 @@ winner.
 
 ### Single Transferable Vote (STV)
 
+## Risk Limiting Audits
 
-## RLAs with RAIRE
+Risk limiting audits (RLAs) are a post-election activity, performed to provide a certain level of confidence
+in the correctness of the reported outcome, or to correct a wrong outcome by manual recount. These
+audits involve randomly sampling paper ballots that have been cast by voters. After collecting and
+analysing such a sample, statistical computations are performed to ascertain a current level of risk. A
+Risk Limiting Audit guarantees a *risk limit*: the maximum probability that it will mistakenly confirm a
+reported outcome that was in fact wrong. The audit proceeds by sampling ballots until this risk falls
+below an acceptable level, or election administrators determine that a full manual count is required.
+
+### RAIRE
 
 **R**isk limiting **A**udits for **IR**V **E**lections (RAIRE) allows election administrators to conduct Risk Limiting
-Audits (RLAs) for Instant Runoff Voting (IRV) elections. 
+Audits (RLAs) for Instant Runoff Voting (IRV) elections. This work introduced
+the concept of an *assertion-based* audit. An assertion is a mathematical
+statement, comparing two tallies in a specific context. These two tallies may be
+the tallies of two candidates in the context where we assume a certain subset of
+candidates are still standing. Given digitised preferences for the ballots cast
+in an IRV election, RAIRE identifies a set of assertions that, if verified in an
+RLA, imply that the announced (reported) winner won. RAIRE uses a
+branch-and-bound algorithm to find a set of assertions that require auditors to
+sample the least number of ballots. RAIRE has been piloted in a number of
+US-based IRV elections: the 2019 San Francisco District Attorney contest; three
+2020 Democratic Presidential Primaries; and a Mayoral Contest in Boulder,
+Colorado, in November 2023. From 2025, RAIRE will be used to audit IRV elections
+taking place in Colorado, United States, through a project with the Australian
+not-for-profit [Democracy Developers](https://www.democracydevelopers.org.au/about-us/). 
 
 
-## RLAs with AWAIRE
+### AWAIRE
 
-## RLAs for STV Elections
+### RLAs for STV Elections
 
-## Mismatch Audits
+### Mismatch Audits
 
 ## Margin Computation
-
-### Instant Runoff Voting (IRV)
-
-### Single Transferable Vote (STV)
 
 
 
