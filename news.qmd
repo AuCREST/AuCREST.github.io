@@ -2,7 +2,9 @@
 title: "News"
 ---
 
-March 2025
+## 2025
+
+**March**
 
 - Two of our papers were accepted at [Voting'25](https://fc25.ifca.ai/voting/):
 
@@ -17,43 +19,98 @@ March 2025
     - [Efficient Lower Bounding of Single Transferable Vote Election
       Margins](https://arxiv.org/abs/2501.14847)
 
+## 2024
 
-February 2022
+**December**
+
+- Congratulations to Michelle Blom for winning the 2024 University of Melbourne
+  Excellence Award for Interdiscplinary Research for her work on risk-limiting
+audits for preferential elections. 
+    - [IEEE Cybersecurity Award for Practice](https://secdev.ieee.org/2023/awardees/)
+
+**October**
+
+- Our work on improving the computational complexity of adaptive audits for IRV
+  elections was presented at EVOTE'24.
+    - [Improving the Computational Efficiency of Adaptive Audits of IRV Elections](https://library.oapen.org/bitstream/handle/20.500.12657/93864/978-3-031-72244-8.pdf?sequence=1#page=48)
+
+**June**
+
+- Our team published an article in the University of Melbourne's Pursuit
+  magazine about our work on auditing preferential elections.
+    - [The Australian research helping to verify US election results](https://pursuit.unimelb.edu.au/articles/the-australian-research-helping-to-verify-us-election-outcomes)
+
+- Congratulations to Michelle Blom for winning the 2024 Faculty of Engineering
+  Excellence Award for Research for her work on risk-limiting audits for
+preferential elections.
+
+    - [2024 Honour Roll](https://eng.unimelb.edu.au/about/feit-excellence-awards/honour-roll/2024-honour-roll)
+
+**May**
+
+- Our work on improved risk-limiting audits for 2-seat STV elections, and
+  efficient weighting schemes for adaptively weighted audits, was
+  presented at VOTING'24
+    - [RLAs for 2-Seat STV Elections: Revisited](https://arxiv.org/pdf/2402.03707)
+    - [Eﬃcient Weighting Schemes for Auditing
+Instant-Runoﬀ Voting Elections](https://fc24.ifca.ai/voting/papers/Voting24_Efficient_Weighting_Schemes_for_Auditing_Instant-Runoff_Voting_Elections_EKEtAl.pdf)
+    
+## 2023
+
+**October**
+
+- Congratulations to Michelle Blom and Vanessa Teague for winning the 2023 IEEE
+  Cybersecurity Award for Practice, in conjunction with Philip Stark and Mark
+Lindeman, at Sec Dev'23. 
+
+- Our team presented work on adaptive audits for IRV elections at EVOTE'23.
+    - [Adaptively Weighted Audits of Instant-Runoff Voting Elections: AWAIRE](https://library.oapen.org/bitstream/handle/20.500.12657/76758/978-3-031-43756-4.pdf?sequence=1#page=46)
+
+**February**
 
 - Our work on risk limiting audits for Ranked Pairs elections has been
 accepted to the VOTING'23 workshop.
+    - [Risk-Limiting Audits for Condorcet Elections](https://arxiv.org/pdf/2303.10509)
 
-September 2022
+
+## 2022
+
+
+**September**
 
 - Our work on using Dirichlet-Tree models for ballot-polling audits
 of IRV elections was presented at the first International Workshop on
 Election Infrastructure Security (EIS'22).
+    - [Ballot-Polling Audits of Instant-Runoﬀ Voting
+Elections with a Dirichlet-Tree Model](https://arxiv.org/pdf/2209.03881)
 
-October 2022
 
-- It's time for the 8th International Joint Conference on Electronic
-Voting (EVOTE-ID'22)! Our team is presenting work on initial steps toward
-using Dirichlet-Tree models for IRV post-election audits.
-
-May 2022
+**May**
 
 - Our work on risk limiting audits for 2-seat STV elections was 
 presented at VOTING'22!
+    - [A First Approach to Risk-Limiting Audits for
+Single Transferable Vote Elections](https://arxiv.org/pdf/2112.09921)
 
-January 2022
+**January**
 
 - This past year our team has explored risk-limiting audit
 methodologies for both party-list proportional and Hamiltonian elections. We
 have also been successful in our ARC Discovery Project application on post-election
 audits for Single Transferable Vote (STV) elections!
+    - [Assertion-Based Approaches to Auditing
+Complex Elections, with Application to
+Party-List Proportional Elections](https://arxiv.org/pdf/2107.11903)
 
-December 2021
+## 2021
+
+**December**
 
 - In an early Christmas present, our team has been awarded an ARC
 Discovery Project grant. This project will focus on developing post-election
 audit methodologies for Single Transferable Vote (STV) elections.
 
-January 2021
+**January**
 
 - Despite the COVID-19 pandemic sending us Melbournians home for the
 majority of the year in 2020, this past year has been a busy one on the election
@@ -63,3 +120,8 @@ our methodology for risk-limiting audits of IRV elections. Early in the year, we
 presented work at IAAI on exploring whether certain mistakes, such as lost ballot
 boxes, could have had caused specific candidates to lose a seat in the context
 of STV elections.
+    - [You can do RLAs for IRV](https://arxiv.org/pdf/2004.00235)
+    - [Shifting the Balance-of-Power in STV Elections](https://www.researchgate.net/profile/David-Duenas-Cid/publication/344471755_Fifth_International_Joint_Conference_on_Electronic_Voting_-_E-Vote-ID_2020_-_Taltech_Press_Proceedings/links/5f7ae77b458515b7cf67a30f/Fifth-International-Joint-Conference-on-Electronic-Voting-E-Vote-ID-2020-Taltech-Press-Proceedings.pdf#page=17)
+    - [Random errors are not politically neutral](https://arxiv.org/pdf/2007.00854)
+    - [Did That Lost Ballot Box Cost Me a Seat? Computing Manipulations of STV Elections](https://ojs.aaai.org/index.php/AAAI/article/view/7029)
+
