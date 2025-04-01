@@ -1,0 +1,18 @@
+---
+email: My first name @andrewconway.org 
+title: Andrew Conway
+description: Amateur Counter
+www:   http://www.andrewconway.org/
+github: AndrewConway
+orcid: 0000-0001-6277-2442
+interests:
+- vote counting
+- genetics
+- biochemistry
+- software engineering
+- computer science
+- combinatorics
+user_groups:
+- Current
+image: avatar.jpg
+---
