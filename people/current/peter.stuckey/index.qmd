@@ -1,0 +1,16 @@
+---
+email: peter.stuckey@monash.edu
+title: Peter Stuckey
+description: Professor in Computer Science
+www:   https://people.eng.unimelb.edu.au/pstuckey/
+interests:
+- constraint programming
+- optimisation & operations research
+- decision-making under uncertainty
+- neuro-symbolic artificial intelligence
+- path finding
+- election integrity
+user_groups:
+- Current
+image: avatar.jpg
+---
