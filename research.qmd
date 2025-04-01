@@ -61,13 +61,20 @@ candidates are still standing. Given digitised preferences for the ballots cast
 in an IRV election, RAIRE identifies a set of assertions that, if verified in an
 RLA, imply that the announced (reported) winner won. RAIRE uses a
 branch-and-bound algorithm to find a set of assertions that require auditors to
-sample the least number of ballots. RAIRE has been piloted in a number of
+sample the least number of ballots. 
+
+RAIRE has been piloted in a number of
 US-based IRV elections: the 2019 San Francisco District Attorney contest; three
 2020 Democratic Presidential Primaries; and a Mayoral Contest in Boulder,
-Colorado, in November 2023. From 2025, RAIRE will be used to audit IRV elections
-taking place in Colorado, United States, through a project with the Australian
-not-for-profit [Democracy Developers](https://www.democracydevelopers.org.au/about-us/). 
+Colorado, in November 2023. 
 
+From 2025, RAIRE will be used to audit IRV elections
+taking place in Colorado, United States, through a project with the Australian
+not-for-profit [Democracy
+Developers](https://www.democracydevelopers.org.au/about-us/). For an accessible
+introduction to RLAs with RAIRE, see the [Guide to RAIRE Part
+1](https://dx.doi.org/10.13140/RG.2.2.33366.56644) and the [Guide to
+Raire Part 2](https://dx.doi.org/10.13140/RG.2.2.16589.35045). 
 
 ### AWAIRE
 
