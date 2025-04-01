@@ -2,4 +2,5 @@
 title: "Contact"
 ---
 
-Information about how to contact us...
+Feel free to contact any of the [CREST members](https://aucrest.github.io/people) by email. For general equiries
+contact Michelle Blom at [michelle.blom@unimelb.edu.au](mailto:michelle.blom@unimelb.edu.au).
