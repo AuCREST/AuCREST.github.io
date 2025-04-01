@@ -18,7 +18,7 @@
     </names>
   </macro>
   <macro name="title">
-    <text variable="title" text-case="unchanged"/>
+    <text variable="title"/>
   </macro>
   <macro name="year">
     <date variable="issued">
@@ -26,19 +26,28 @@
     </date>
   </macro>
   <macro name="journal">
-    <group delimiter=" ">
-      <text variable="container-title" font-style="italic" text-case="unchanged"/>
-      <group delimiter=", ">
+    <group delimiter=", ">
+      <text variable="container-title" font-style="italic" text-case="title"/>
+      <group delimiter="">
         <text variable="volume"/>
-        <text variable="issue"/>
+        <text variable="issue" prefix="(" suffix=")"/>
+        <text variable="page" prefix=":"/>
+        <text variable="year" prefix=", "/>
       </group>
     </group>
   </macro>
   <macro name="conference">
-    <group delimiter=", ">
-      <text variable="container-title" font-style="italic" text-case="unchanged"/>
+    <group delimiter=". ">
+      <text variable="container-title" font-style="italic" text-case="title"/>
       <group delimiter=" ">
+        <text variable="collection-title"/>
+        <text variable="volume"/>
+        <text variable="collection-number"/>
+      </group>
+      <group delimiter=", ">
         <text variable="publisher"/>
+        <text macro="year"/>
+        <text variable="page" prefix="pp. "/>
       </group>
     </group>
   </macro>
@@ -52,9 +61,7 @@
     <choose>
       <if variable="URL">
         <group delimiter=" ">
-          <text term="retrieved" text-case="unchanged"/>
-          <date variable="accessed" form="text"/>
-          <text term="from"/>
+          <text term="available at"/>
           <text variable="URL"/>
         </group>
       </if>
@@ -71,46 +78,42 @@
       </group>
     </layout>
   </citation>
-  <bibliography et-al-min="99" et-al-use-first="99" second-field-align="flush">
+  <bibliography second-field-align="flush" et-al-min="99" et-al-use-first="99" entry-spacing="1" line-spacing="2">
     <sort>
       <key variable="issued" sort="descending"/>
     </sort>
     <layout suffix=".">
-      <text variable="citation-number" suffix="."/>
+      <text variable="citation-number" prefix="[" suffix="]"/>
       <text macro="author" suffix=". "/>
-      <text macro="year" suffix=". "/>
-      <text macro="title" suffix=". "/>
+      <text macro="title" prefix='"' suffix='". '/>
       <choose>
-        <if type="bill book graphic legal_case legislation motion_picture report song" match="any">
+        <if type="book report" match="any">
           <text macro="book-publisher" suffix="."/>
+          <text macro="year"/>
         </if>
         <else-if type="paper-conference">
-          <group suffix="." delimiter=", ">
-            <text macro="conference"/>
-            <text variable="page" prefix="pp. "/>
-          </group>
+          <text macro="conference" suffix=". "/>
         </else-if>
         <else-if type="chapter paper-conference" match="any">
-          <text term="in" text-case="unchanged" suffix=" "/>
+          <text term="in" text-case="title" suffix=" "/>
           <text macro="editor" suffix=", "/>
-          <text variable="container-title" font-style="italic" suffix=". " text-case="unchanged"/>
+          <text variable="container-title" font-style="italic" suffix=". " text-case="title"/>
           <group suffix="." delimiter=", ">
             <text macro="book-publisher"/>
+            <text macro="year"/>
             <text variable="page" prefix="pp. "/>
           </group>
         </else-if>
         <else-if type="article-journal">
-          <group suffix="." delimiter=": ">
-            <text macro="journal"/>
-            <text variable="page" prefix="pp. "/>
-          </group>
+          <text macro="journal" suffix=". "/>
         </else-if>
         <else>
           <group suffix="." delimiter=", ">
             <group delimiter=" ">
-              <text variable="container-title" font-style="italic" text-case="unchanged"/>
+              <text variable="container-title" font-style="italic" text-case="title"/>
               <text variable="volume"/>
             </group>
+            <text macro="year"/>
             <text variable="page" prefix="pp. "/>
           </group>
           <text macro="access" prefix=" "/>
