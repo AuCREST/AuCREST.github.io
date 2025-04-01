@@ -2,6 +2,9 @@
 title: "CREST"
 ---
 
+<div align="center">![A picture of a pink crested
+cockatoo](171901813.jpeg)</div>
+
 Collaborative Research for Election Security and Trustworthiness Group (CREST)
 
 We work on a range of topics related to election integrity, including
