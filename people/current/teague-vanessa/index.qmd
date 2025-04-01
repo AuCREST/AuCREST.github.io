@@ -1,0 +1,14 @@
+---
+email: vaucrest@greatcactus.org 
+title: Vanessa Teague 
+description: Chairperson, Democracy Developers Ltd. 
+www:   https://www.democracydevelopers.org.au 
+interests:
+- election integrity
+- cryptography
+- security and privacy
+- risk-limiting audits
+user_groups:
+- Current
+image: avatar.png
+---
