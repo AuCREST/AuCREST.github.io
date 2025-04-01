@@ -1,0 +1,15 @@
+---
+email: michelle.blom@unimelb.edu.au
+title: Michelle Blom
+description: Senior Research Fellow
+www:   https://michelleblom.github.io
+interests:
+- election integrity
+- risk-limiting audits
+- optimisation & operations research
+- optimisation in the resources sector
+- industry engagement
+user_groups:
+- Current
+image: avatar.jpg
+---
