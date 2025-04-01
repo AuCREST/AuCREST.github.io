@@ -10,5 +10,5 @@ interests:
 - risk-limiting audits
 user_groups:
 - Current
-image: avatar.png
+image: avatar.jpg
 ---
