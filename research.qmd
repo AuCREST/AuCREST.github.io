@@ -9,7 +9,7 @@ for various election systems, and algorithms for analysing the properties of
 elections, such as the margin of victory. 
 
 
-## Voting Schemes
+## Background: Voting Schemes
 
 Our research primarily considers election systems in which voters rank
 candidates according to their preferences, commonly referred to as preferential
@@ -37,8 +37,46 @@ Alternatively, we can continue to eliminated the candidate with the smallest
 tally until one candidate remains. This last remaining candidate is declared the
 winner.
  
+IRV is used in Australia to elect candidates to our lower houses of State and
+Federal Parliaments. It is also increasingly being used in the [United
+States](https://www.rcvresources.org/where-is-rcv-used), with a different
+moniker -- Ranked Choice Voting (RCV). 
 
 ### Single Transferable Vote (STV)
+
+The Single Transferable Vote (STV) is a multi-winner preferential and
+proportional voting system. It is used in Australia to elect candidates to the 
+upper houses of our State and Federal Parliaments, and at the local council
+level when electing multiple councillors for a given district. STV is also used
+at the local council level in Scotland and the United States. 
+
+More complex than IRV, the tabulation of an STV election proceeds in rounds of
+candidate election and elimination. A candidate is elected in two circumstances:
+when their tally reaches or exceeds a threshold known as the *quota*; or when
+they remain standing at a point where the number of candidates left equals the
+number of seats left to be filled. The election's quota can be computed in
+different ways, with the [Droop quota](https://en.wikipedia.org/wiki/Droop_quota) commonly used. If no candidate has a quota's worth of votes
+in their tally at the start of a round, the candidate with the smallest tally is
+eliminated, with the ballots in their tally reassigned to the tally piles of
+later preferences on the ballot. 
+
+As per IRV, candidates in an STV election are initially given all ballots on
+which they have been ranked first (most preferred). This forms their first
+preference tally, with all ballots starting with a value of 1 vote. A key
+complexity of STV is that ballots change in value over the course of tabulation. 
+
+When a candidate is eliminated, each ballot in their tally pile is given to the next most preferred
+eligible candidate on the ballot *at its current value*. A candidate is eligible
+to receive votes if and only if they have not yet been seated or eliminated, and they did
+not already have a quota's worth of votes at the start of the round. When a
+candidate is elected to a seat, each of their ballots is given to the next most
+preferred eligible candidates on the ballot *at a reduced value*. How this
+reduced value is computed varies across different implementations of STV. 
+
+STV tabulation proceeds in rounds of candidate election and elimination until
+either all seats have been filled, or the number of continuing candidates (those
+that have not yet been eliminated or elected) equals the number of seats left to
+be filled.
 
 ## Risk Limiting Audits
 
@@ -80,9 +118,42 @@ Raire Part 2](https://dx.doi.org/10.13140/RG.2.2.16589.35045).
 
 ### RLAs for STV Elections
 
+Developing risk-limiting audits for STV elections is challenging, given the high
+complexity of the STV counting algorithm and the variation in how it is
+implemented across jurisdictions. We have made progress in developing RLAs for
+some classes of STV elections.
+
+- 2 seat STV elections where the first winner is elected in the first round. We
+  have published two papers to date on this case, with the more recent paper
+presenting an improved method resulting in audits that sample less ballots.
+    - [A First Approach to Risk-Limiting Audits for
+Single Transferable Vote Elections](https://arxiv.org/pdf/2112.09921)
+    - [RLAs for 2-Seat STV Elections: Revisited](https://arxiv.org/pdf/2402.03707)
+
+
+- STV elections of 3 seats or more, restricted to the cases where the first
+  winner is elected in the first round.
+    - [3+ Seat Risk-Limiting Audits for Single Transferable Vote
+      Elections](https://arxiv.org/abs/2503.14803)
+
 ### Mismatch Audits
 
 ## Margin Computation
+
+Knowing how close an election was provides useful information when assessing
+whether certain known errors could have influenced the outcome. The margin of
+victory of an election can be defined as the smallest number of ballots that we
+would have to manipulate (alter) in order to change who won. We have developed
+methods to compute margins of victory for [IRV
+elections](https://ebooks.iospress.nl/doi/10.3233/978-1-61499-672-9-480) and for
+computing lower bounds on the margin of victory for [STV
+elections](https://pubsonline.informs.org/doi/abs/10.1287/ijoc.2018.0853).
+
+The computation of tight lower bounds on the margin for STV elections is still
+an open problem, particularly for large STV elections with many seats and over a
+hundred candidates. Margin computation under more flexible definitions of the
+margin, where manipulations can include modidification, addition, and removal of
+ballots, is another open challenge. 
 
 
 ## Security, Accuracy and Privacy 
