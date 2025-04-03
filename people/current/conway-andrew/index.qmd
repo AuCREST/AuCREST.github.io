@@ -1,7 +1,7 @@
 ---
 email: My first name @andrewconway.org 
 title: Andrew Conway
-description: Amateur Counter
+description: Open source software writer
 www:   http://www.andrewconway.org/
 github: AndrewConway
 orcid: 0000-0001-6277-2442
