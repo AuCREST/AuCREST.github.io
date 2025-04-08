@@ -27,6 +27,10 @@ title: "News"
   Excellence Award for Interdiscplinary Research for her work on risk-limiting
 audits for preferential elections. 
 
+- Michelle Blom discussed our work on post-election auditing at the ADM+S
+  conference on the [fairness of elections in the age of AI](https://www.admscentre.org.au/adms-hosts-usc-election-cybersecurity-initiative-to-consider-fair-elections-in-the-age-of-ai/):
+    - [Program](https://www.admscentre.org.au/event/elections-ai/)
+    - [Summary](https://www.youtube.com/watch?v=Af1pMzfvjKI)
 
 **October**
 
